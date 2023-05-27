@@ -1,8 +1,13 @@
-import React from "react";
+import React, {useState} from "react";
 import "../styles/NavBar.css";
 import site_logo from "../site_logo.svg";
 
 export default function NavBar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleMenuToggle = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
   return (
     <>
       <header>
@@ -32,15 +37,14 @@ export default function NavBar() {
               <a href="/contact">Contact Us</a>
             </li>
           </ul>
-
           <a href="#" className="signup-btn">
             SignUp / LogIn
           </a>
-          <div className="toggle_btn">
+          <div className="toggle_btn" onClick={handleMenuToggle}>
             <i className="fa-regular fa-bars"></i>
           </div>
         </div>
-        <div className="dropdown_menu open">
+        <div className={`dropdown_menu ${isMenuOpen ? "active" : "inactive"}`}>
           <li>
             <a href="/home">Home</a>
           </li>

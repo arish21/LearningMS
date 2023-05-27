@@ -31,9 +31,6 @@ li{
 
 }
 
-
-
-
 a{
     text-decoration: none;
     color: black;
@@ -84,6 +81,8 @@ header{
     display: none;
 }
 
+
+
 /* DROPDOWN MENU */
 .dropdown_menu {
     display: none;
@@ -95,7 +94,6 @@ header{
     backdrop-filter: blur(15px);
     border-radius: 10px;
     overflow: hidden;
-    height: 0;
     transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -116,7 +114,7 @@ header{
 }
 
 /* RESPONSIVE DESIGN */
-@media(max-width: 1172px) {
+@media(max-width: 972px) {
     .navBar .links,
     .navBar .signup-btn {
         display: none;
@@ -126,7 +124,29 @@ header{
         display: block;
     }
 
-    .dropdown_menu {
+
+    .site-logo {
+        height: 7.5vmin;
+        padding-left: 20px;
+    }
+
+    .slogo {
+        height: 6.5vmin;
+    }
+
+    .active{
         display: block;
+    }
+    .inactive{
+        display: none !important;
+    }
+}
+
+
+@media(max-width: 600px) {
+    .dropdown_menu{
+        left: 2rem;
+        width: unset;
+        
     }
 }
