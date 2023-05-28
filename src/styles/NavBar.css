@@ -15,10 +15,13 @@
     align-items: center;
     justify-content: space-between;
     padding-right: 20px;
+    /* background-color: bisque; */
+    box-shadow: 1px 1px 10px #25252570;
+    position: fixed;
 }
 .site-logo {
     height: 4.5vmin;
-    padding-left: 20px;
+    padding-left: 10px;
 }
 
 .slogo {
@@ -43,7 +46,7 @@ a:hover{
 
 header{
     position: relative;
-    padding: 0 2rem;
+    /* padding: 0 0rem; */
 }
 
 .navBar .links {
