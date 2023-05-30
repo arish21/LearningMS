@@ -1,6 +1,6 @@
 import React, {useState} from "react";
-import "E:/CodeProject/LearningMgmtSystem/LearningMS/src/styles/NavBar.css";
-import site_logo from "E:/CodeProject/LearningMgmtSystem/LearningMS/src/site_logo.svg";
+import "../../styles/NavBar.css";
+import site_logo from "../../site_logo.svg";
 import { handleSignup } from "../LoginPage/SignUp.js";
 
 export function NavBar() {
