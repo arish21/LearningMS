@@ -1,8 +1,9 @@
 import React, {useState} from "react";
-import "../styles/NavBar.css";
-import site_logo from "../site_logo.svg";
+import "E:/CodeProject/LearningMgmtSystem/LearningMS/src/styles/NavBar.css";
+import site_logo from "E:/CodeProject/LearningMgmtSystem/LearningMS/src/site_logo.svg";
+import { handleSignup } from "../LoginPage/SignUp.js";
 
-export default function NavBar() {
+export function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleMenuToggle = () => {
@@ -37,7 +38,7 @@ export default function NavBar() {
               <a href="/contact">Contact Us</a>
             </li>
           </ul>
-          <a href="#" className="signup-btn">
+          <a href="#" className="signup-btn" onClick={handleSignup}>
             SignUp / LogIn
           </a>
           <div className="toggle_btn" onClick={handleMenuToggle}>
@@ -64,7 +65,7 @@ export default function NavBar() {
             <a href="/contact">Contact Us</a>
           </li>
           <li>
-            <a href="#" className="signup-btn">
+            <a href="#" className="signup-btn" onClick={handleSignup}>
               SignUp / LogIn
             </a>
           </li>
