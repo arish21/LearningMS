@@ -38,7 +38,7 @@ export function NavBar() {
               <a href="/contact">Contact Us</a>
             </li>
           </ul>
-          <a href="#" className="signup-btn" onClick={handleSignup}>
+          <a href="/signup" className="signup-btn" onClick={handleSignup}>
             SignUp / LogIn
           </a>
           <div className="toggle_btn" onClick={handleMenuToggle}>
@@ -65,7 +65,7 @@ export function NavBar() {
             <a href="/contact">Contact Us</a>
           </li>
           <li>
-            <a href="#" className="signup-btn" onClick={handleSignup}>
+            <a href="/signup" className="signup-btn" onClick={handleSignup}>
               SignUp / LogIn
             </a>
           </li>

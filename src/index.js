@@ -1,14 +1,27 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import { NavBar } from './components/landingPage/NavBar';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { NavBar } from "./components/landingPage/NavBar";
+import Signup from "./components/landingPage/Signup";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <NavBar />
+    {/* <NavBar /> */}
+    {/* <Signup /> */}
+    <>
+      <Router>
+        <NavBar />
+        <Routes>
+          {/* <Route exact path="/" element={<Home />}></Route> */}
+          <Route exact path="/signup" element={<Signup />}></Route>
+          
+        </Routes>
+      </Router>
+    </>
   </React.StrictMode>
 );
 

@@ -16,6 +16,7 @@
     justify-content: space-between;
     padding-right: 20px;
     box-shadow: 0px 1.5px rgba(0, 0, 0, 0.162) ;
+    position: relative;
 }
 .site-logo {
     height: 4.5vmin;
@@ -53,7 +54,7 @@ header{
 }
 
 .signup-btn {
-    background-color: rgba(133, 28, 28, 0.898);
+    background-color: #851c1ce5;
     color: #ffffff;
     font-weight: bold;
     padding: 0.5rem 1rem;
@@ -66,7 +67,7 @@ header{
 }
 
 .signup-btn:hover {
-    scale: 1.15;
+    scale: 1.02;
     background-color: #4285F4;
     color: #ffffff;
 }
