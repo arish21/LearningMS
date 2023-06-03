@@ -6,6 +6,8 @@ import reportWebVitals from "./reportWebVitals";
 import { NavBar } from "./components/landingPage/NavBar";
 import Signup from "./components/landingPage/Signup";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {Home} from "./components/landingPage/Home";
+import Contact from "./components/landingPage/Contact";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -16,12 +18,15 @@ root.render(
       <Router>
         <NavBar />
         <Routes>
-          {/* <Route exact path="/" element={<Home />}></Route> */}
+          <Route exact path="/home" element={<Home />}></Route>
           <Route exact path="/signup" element={<Signup />}></Route>
+          <Route exact path="/contact" element={<Contact />}></Route>
           
         </Routes>
       </Router>
+      {/* <Contact /> */}
     </>
+    {/* <Contact /> */}
   </React.StrictMode>
 );
 

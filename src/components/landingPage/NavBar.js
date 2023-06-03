@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import "../../styles/NavBar.css";
 import site_logo from "../../site_logo.svg";
-import { handleSignup } from "../LoginPage/SignUp.js";
+import { SignUp } from "../LoginPage/SignUp.js";
 
 export function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -32,13 +32,13 @@ export function NavBar() {
               <a href="/about">About</a>
             </li>
             <li>
-              <a href="/contact">Training</a>
+              <a href="/training">Training</a>
             </li>
             <li>
               <a href="/contact">Contact Us</a>
             </li>
           </ul>
-          <a href="/signup" className="signup-btn" onClick={handleSignup}>
+          <a href="/signup" className="signup-btn" onClick={SignUp}>
             SignUp / LogIn
           </a>
           <div className="toggle_btn" onClick={handleMenuToggle}>
@@ -59,13 +59,13 @@ export function NavBar() {
             <a href="/about">About</a>
           </li>
           <li>
-            <a href="/contact">Training</a>
+            <a href="/training">Training</a>
           </li>
           <li>
             <a href="/contact">Contact Us</a>
           </li>
           <li>
-            <a href="/signup" className="signup-btn" onClick={handleSignup}>
+            <a href="/signup" className="signup-btn" onClick={SignUp}>
               SignUp / LogIn
             </a>
           </li>

@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body,
+input {
+    font-family: "Poppins", sans-serif;
+}
+
+.contain {
+    position: fixed;
+    width: 25%;
+    background-color: #851c1ce5;
+    min-height: 100vh;
+    overflow: clip;
+}
+
+.title-contact {
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    margin-top: 35%;
+    color: #ffffff;
+    line-height: 1.8rem;
+}
+
+.title-contact-text {
+    width: 86%;
+    justify-content: center;
+    align-items: center;
+    margin: 0% 10%;
+    color: #ffffff;
+}
+
+.info-title-text-na {
+    width: 86%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    margin-top: 15%;
+    color: #363232;
+}
+
+.ph-text-area-na {
+    display: flex;
+    flex-direction: row;
+    margin-top: 4%;
+}
+
+.ph-text-area-na p {
+    color: #ffffff !important;
+    margin-top: -1%;
+    margin-left: 2%;
+
+}
+
+.info-title-text-other {
+    width: 86%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    margin-left: 10%;
+    color: #363232;
+}
+
+
+.ph-text-area-other {
+    display: flex;
+    flex-direction: row;
+}
+
+.ph-text-other {
+    color: #ffffff !important;
+    margin-top: -1%;
+}
+
+
+.social-media-icons {
+    margin-top: 55%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+}
+
+.social-me-i {
+    height: 46px;
+    width: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0.45rem;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 2.6rem;
+    transition: 0.3s;
+}
+
+.social-me-i:hover {
+    color: #363232;
+}
+
+.left-circle {
+    height: 150px;
+    width: 150px;
+    background-color: #E2AAA7;
+    border-radius: 50%;
+    position: absolute;
+    left: 200px;
+    bottom: 160px;
+}
+
+.right-circle {
+    height: 550px;
+    width: 550px;
+    background-color: #CF736E;
+    border-radius: 50%;
+    position: absolute;
+    left: 220px;
+    top: 660px;
+    overflow: hidden;
+}
+
+.inner-circle{
+    height: 150px;
+    width: 150px;
+    background-color: #e2aaa795;
+    border-radius: 50%;
+    position: absolute;
+    left: -20px;
+    top: 31px;
+}
