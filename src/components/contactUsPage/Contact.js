@@ -1,7 +1,9 @@
 import React from "react";
 import "../../styles/Contact.css";
-import ContactForm from "../LoginPage/ContactForm";
-function Contact() {
+import ContactForm from "./ContactForm";
+
+// left panel of Contact Us Page
+export function Contact() {
   return (
     <>
       <div className="main-contain">

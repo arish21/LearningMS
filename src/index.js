@@ -4,10 +4,10 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { NavBar } from "./components/landingPage/NavBar";
-import Signup from "./components/landingPage/Signup";
+import { SignUp } from "./components/LoginPage/SignUp";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import {Home} from "./components/landingPage/Home";
-import Contact from "./components/landingPage/Contact";
+import { Contact } from "./components/contactUsPage/Contact";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -19,7 +19,7 @@ root.render(
         <NavBar />
         <Routes>
           <Route exact path="/home" element={<Home />}></Route>
-          <Route exact path="/signup" element={<Signup />}></Route>
+          <Route exact path="/signup" element={<SignUp />}></Route>
           <Route exact path="/contact" element={<Contact />}></Route>
           
         </Routes>

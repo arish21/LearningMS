@@ -19,6 +19,8 @@ import Stack from "@mui/material/Stack";
 
 import Select, { SelectChangeEvent } from "@mui/material/Select";
 
+//Right panel/form of Contact Us form
+
 function ContactForm() {
   const [age, setAge] = React.useState("");
 
